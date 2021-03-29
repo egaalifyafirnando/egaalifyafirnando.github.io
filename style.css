@@ -1,0 +1,169 @@
+section {
+  min-height: 450px;
+}
+
+hr {
+  width: 250px;
+  border-top: 4px solid #666;
+}
+
+.navbar {
+  background-color: #091921;
+}
+
+.jumbotron {
+  background-image: url(img/bg22.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 -20px;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron .container h1,
+.jumbotron .container h5,
+.jumbotron .container p {
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.portfolio {
+  background-image: url(img/bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 50px;
+}
+
+.portfolio h2, .portfolio h5 {
+  color: white;
+}
+
+.portfolio h6 {
+  color: black;
+}
+
+.portfolio .card {
+  opacity: 0;
+  transition: .5s;
+  transform: translate(0, -40px);
+  font-size: 11px;
+}
+
+
+
+.bussiness p {
+  color: black;
+}
+
+.about p,
+.portfolio p,
+.jumbotron p {
+  color: black;
+}
+
+#address,
+#tombol {
+  background-color: #091921;
+}
+
+/* footer */
+
+.sosmed {
+  background-color: #091921;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sosmed .container .row .col h2,
+p {
+  color: #b6bbc5;
+}
+
+.sosmed a {
+  text-align: center;
+  justify-content: center;
+}
+
+.sosmed li {
+  margin: 10px;
+  height: 90px;
+  width: 90px;
+  background-color: #091921;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.sosmed li a {
+  color: #b6bbc5;
+  font-size: 40px;
+  width: 100%;
+  line-height: 90px;
+}
+
+.sosmed li a:hover {
+  color: rgb(68, 155, 221);
+}
+
+.sosmed .copyright {
+  color: #b6bbc5;
+}
+
+.copyright i {
+  color: red;
+}
+
+
+/* animasi */
+.about, .progress {
+  overflow-x: hidden;
+}
+
+.kiri,
+.kanan {
+  opacity: 0;
+  transition: 2s;
+}
+
+.kiri {
+  transform: translate(-200px, 0);
+  text-align: end;
+}
+
+.kanan {
+  transform: translate(200px, 0);
+  text-align: start;
+}
+
+.kiri.pmuncul,
+.kanan.pmuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.portfolio .card.muncul {
+  transition: 0.5s;
+}
+
+.portfolio .card.muncul:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.portfolio .card, .sosmed li {
+  opacity: 0;
+  transition: .5s;
+  transform: translate(0, -40px);
+  font-size: 11px;
+  box-shadow: 1px 1px 12px rgba(1, 0, 0, 0.4)
+}
+
+.portfolio .card.muncul, .sosmed li.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
