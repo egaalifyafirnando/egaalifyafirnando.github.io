@@ -89,6 +89,7 @@ p {
 }
 
 .sosmed li {
+  display: inline-block;
   margin: 10px;
   height: 90px;
   width: 90px;
