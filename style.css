@@ -155,12 +155,18 @@ p {
   z-index: 1;
 }
 
-.portfolio .card, .sosmed li {
+.portfolio .card {
   opacity: 0;
   transition: .5s;
   transform: translate(0, -40px);
   font-size: 11px;
   box-shadow: 1px 1px 12px rgba(1, 0, 0, 0.4)
+}
+
+.sosmed li {
+  opacity: 0;
+  transition: .5s;
+  transform: translate(0, -40px);
 }
 
 .portfolio .card.muncul, .sosmed li.muncul {
