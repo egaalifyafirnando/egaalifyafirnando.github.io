@@ -78,6 +78,10 @@ hr {
   text-decoration: none;
 }
 
+.sosmed ul {
+  padding-inline-start: 0;
+}
+
 .sosmed .container .row .col h2,
 p {
   color: #b6bbc5;
