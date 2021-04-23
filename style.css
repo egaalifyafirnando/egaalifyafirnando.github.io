@@ -12,7 +12,7 @@ hr {
 }
 
 .jumbotron {
-  background-image: url(img/bg22.jpg);
+  background-image: url(img/bg2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 -20px;
@@ -30,15 +30,15 @@ hr {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
-
 .portfolio {
-  background-image: url(img/bg2.jpg);
+  background-image: url(img/bg1.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 50px;
 }
 
-.portfolio h2, .portfolio h5 {
+.portfolio h2,
+.portfolio h5 {
   color: white;
 }
 
@@ -48,12 +48,10 @@ hr {
 
 .portfolio .card {
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   transform: translate(0, -40px);
   font-size: 11px;
 }
-
-
 
 .bussiness p {
   color: black;
@@ -123,9 +121,9 @@ p {
   color: red;
 }
 
-
 /* animasi */
-.about, .progress {
+.about,
+.progress {
   overflow-x: hidden;
 }
 
@@ -162,19 +160,20 @@ p {
 
 .portfolio .card {
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   transform: translate(0, -40px);
   font-size: 11px;
-  box-shadow: 1px 1px 12px rgba(1, 0, 0, 0.4)
+  box-shadow: 1px 1px 12px rgba(1, 0, 0, 0.4);
 }
 
 .sosmed li {
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   transform: translate(0, -40px);
 }
 
-.portfolio .card.muncul, .sosmed li.muncul {
+.portfolio .card.muncul,
+.sosmed li.muncul {
   opacity: 1;
   transform: translate(0, 0);
 }
