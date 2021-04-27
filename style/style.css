@@ -12,7 +12,7 @@ hr {
 }
 
 .jumbotron {
-  background-image: url(img/bg2.jpg);
+  background-image: url(../img/bg2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 -20px;
@@ -31,7 +31,7 @@ hr {
 }
 
 .portfolio {
-  background-image: url(img/bg1.jpg);
+  background-image: url(../img/bg1.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 50px;
