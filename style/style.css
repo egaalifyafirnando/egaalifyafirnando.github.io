@@ -1,179 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 section {
-  min-height: 450px;
+    min-height: 450px;
 }
 
 hr {
-  width: 250px;
-  border-top: 4px solid #666;
+    width: 250px;
+    border-top: 4px solid #666;
 }
 
 .navbar {
-  background-color: #091921;
+    background-color: #091921;
+}
+
+.navbar a {
+    color: #b6bbc5;
+}
+.navbar a:hover {
+    font-weight: bolder;
 }
 
 .jumbotron {
-  background-image: url(../img/bg2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 0 -20px;
-  overflow: hidden;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -20px;
+    overflow: hidden;
 }
 
-.jumbotron img {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+.jumbotron .container img {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .jumbotron .container h1,
 .jumbotron .container h5,
 .jumbotron .container p {
-  color: white;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    color: #b6bbc5;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cv {
+    font-size: 12px;
+    padding: 8px 12px;
+    color: black;
+    background-color: #b6bbc5;
+    box-shadow: 0 6px #999ca3;
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-cv:hover {
+    opacity: 0.8;
+}
+
+.btn-cv:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
 }
 
 .portfolio {
-  background-image: url(../img/bg1.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 0 50px;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 50px;
 }
 
 .portfolio h2,
 .portfolio h5 {
-  color: white;
+    color: #b6bbc5;
 }
 
 .portfolio h6 {
-  color: black;
+    color: black;
 }
 
 .portfolio .card {
-  opacity: 0;
-  transition: 0.5s;
-  transform: translate(0, -40px);
-  font-size: 11px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate(0, -40px);
+    font-size: 11px;
+}
+
+.carousel-item img {
+    border-radius: 5px;
 }
 
 .bussiness p {
-  color: black;
+    color: black;
 }
 
 .about p,
 .portfolio p,
 .jumbotron p {
-  color: black;
+    color: black;
 }
 
 #address,
 #tombol {
-  background-color: #091921;
+    background-color: #091921;
 }
 
 /* footer */
 
 .sosmed {
-  background-color: #091921;
-  list-style: none;
-  text-decoration: none;
+    background-color: #091921;
+    list-style: none;
+    text-decoration: none;
 }
 
 .sosmed ul {
-  padding-inline-start: 0;
+    padding-inline-start: 0;
 }
 
 .sosmed .container .row .col h2,
 p {
-  color: #b6bbc5;
+    color: #b6bbc5;
 }
 
 .sosmed a {
-  text-align: center;
-  justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .sosmed li {
-  display: inline-block;
-  margin: 10px;
-  height: 90px;
-  width: 90px;
-  background-color: #091921;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    margin: 10px;
+    height: 90px;
+    width: 90px;
+    background-color: #091921;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+        2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .sosmed li a {
-  color: #b6bbc5;
-  font-size: 40px;
-  width: 100%;
-  line-height: 90px;
+    color: #b6bbc5;
+    font-size: 40px;
+    width: 100%;
+    line-height: 90px;
 }
 
 .sosmed li a:hover {
-  color: rgb(68, 155, 221);
+    color: rgb(68, 155, 221);
 }
 
 .sosmed .copyright {
-  color: #b6bbc5;
+    color: #b6bbc5;
 }
 
 .copyright i {
-  color: red;
+    color: red;
 }
 
 /* animasi */
 .about,
-.progress {
-  overflow-x: hidden;
+.progress,
+.alert {
+    overflow-x: hidden;
 }
 
 .kiri,
 .kanan {
-  opacity: 0;
-  transition: 2s;
+    opacity: 0;
+    transition: 2s;
 }
 
 .kiri {
-  transform: translate(-200px, 0);
-  text-align: end;
+    transform: translate(-200px, 0);
+    text-align: end;
 }
 
 .kanan {
-  transform: translate(200px, 0);
-  text-align: start;
+    transform: translate(200px, 0);
+    text-align: start;
 }
 
 .kiri.pmuncul,
 .kanan.pmuncul {
-  opacity: 1;
-  transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 .portfolio .card.muncul {
-  transition: 0.5s;
+    transition: 0.5s;
 }
 
 .portfolio .card.muncul:hover {
-  transform: scale(1.1);
-  z-index: 1;
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 .portfolio .card {
-  opacity: 0;
-  transition: 0.5s;
-  transform: translate(0, -40px);
-  font-size: 11px;
-  box-shadow: 1px 1px 12px rgba(1, 0, 0, 0.4);
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate(0, -40px);
+    font-size: 11px;
+    box-shadow: 1px 1px 12px rgba(1, 0, 0, 0.4);
+}
+
+.bussiness ul li p {
+    color: #b6bbc5;
 }
 
 .sosmed li {
-  opacity: 0;
-  transition: 0.5s;
-  transform: translate(0, -40px);
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate(0, -40px);
 }
 
 .portfolio .card.muncul,
 .sosmed li.muncul {
-  opacity: 1;
-  transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.alert {
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    bottom: 10px;
+    left: 20px;
+    opacity: 0;
+    transform: translate(-500px, 0);
+    transition: 0.5s;
+}
+
+.alert.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+@media screen and (max-width: 670px) {
+    .jumbotron .container h1 {
+        font-size: 25px;
+    }
+    .jumbotron .container h5 {
+        font-size: 15px;
+    }
+
+    .jumbotron .container p {
+        font-size: 10px;
+    }
+
+    .btn-cv {
+        font-size: 10px;
+        padding: 6px 85px;
+    }
+
+    .about p {
+        text-align: justify;
+    }
+
+    .alert {
+        width: 200px;
+        font-size: 8px;
+    }
 }
